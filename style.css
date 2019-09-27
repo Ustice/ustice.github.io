@@ -1,0 +1,120 @@
+html {
+  --color-white: hsla(200, 80%, 99%, 1.0);
+  --color-white-translucent: hsla(200, 80%, 99%, 0.5);
+  --color-extra-light: hsla(200, 80%, 95%, 1.0);
+  --color-light: hsla(200, 66%, 50%, 1.0);
+  --color-dark: hsla(200, 80%, 30%, 1.0);
+  --color-black: hsla(200, 80%, 5%, 1.0);
+  --color-black-translucent: hsla(200, 80%, 5%, 0.5);
+
+  background-color: var(--color-extra-light);
+  padding: 0;
+  margin: 0;
+
+  line-height: 1.125em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+body {
+  max-width: 8.5in;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "sidebar main"
+  ;
+
+  font-family: sans-serif;
+  background-color: var(--color-white);
+}
+
+.sidebar {
+  grid-area: sidebar;
+
+  padding: 0.25in;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.sidebar a {
+  color: var(--color-extra-light);
+}
+
+.contact {
+  padding-bottom: 1em;
+}
+
+.contact,
+.skills {
+  border-bottom: var(--color-white-translucent) 1px solid;
+}
+
+.contact__title {
+  margin-top: 0;
+}
+
+.contact__method {
+  margin-top: 0.5em;
+  color: var(--color-white-translucent);
+}
+
+.skills__list,
+.awards__list {
+  color: var(--color-white-translucent);
+}
+
+.skills__list em,
+.awards__list__description {
+  color: var(--color-white);
+}
+
+.main {
+  grid-area: main;
+
+  padding: 0.25in;
+}
+
+.identity__name {
+  margin-bottom: 0.125em;
+  margin-top: 0;
+}
+
+.identity__location {
+  opacity: 0.5;
+}
+
+.job__company {
+  margin-bottom: 0.25em;
+}
+
+.job__accomplishments {
+  list-style: disc;
+  padding-left: 1em;
+}
+
+.job__title {
+  font-weight: bold;
+}
+
+.job__location {
+  color: var(--color-black-translucent);
+}
+
+.school__name {
+  margin-bottom: 0.125em;
+}
